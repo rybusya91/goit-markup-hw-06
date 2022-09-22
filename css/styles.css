@@ -773,3 +773,74 @@ ul {
   min-width: 18px;
   height: 18px;
 }
+/* форма в модальном окне */
+.modal-title {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+.modal-item {
+position: relative;
+margin-bottom: 10px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+box-sizing: border-box;
+
+
+width: 448px;
+height: 40px;
+
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+.modal-form-spec {
+  color: #2196f3;
+  text-decoration: underline;
+  padding-left: 2px;
+}
+.subscription-icon {
+  fill: #fff;
+  width: 24px;
+  right: 24px;
+  margin-left: 12px;
+}
+.subscription-button {
+  color: #fff;
+  display: flex;
+
+-webkit-box-align: center;
+width: 200px;
+height: 50px;
+left: 1185px;
+top: 2784px;
+align-items: center;
+text-align: center;
+letter-spacing: .06em;
+background-color: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border-color: #2196f3;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscription-footer {
+box-sizing: border-box;
+display: flex;
+width: 358px;
+height: 50px;
+left: 815px;
+top: 2784px;
+
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+
