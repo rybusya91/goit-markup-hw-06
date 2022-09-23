@@ -788,7 +788,7 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  /* text-align: center; */
+  text-align: center;
   width: 448px;
   height: 23px;
   left: 576px;
@@ -801,15 +801,10 @@ ul {
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.modal-form:hover,
-.modal-form:focus {
-  background: #ffffff;
-  border: 1px solid #2196f3;
-  border-radius: 4px;
-}
+
 .modal-form label {
   margin-bottom: 5px;
 }
@@ -822,11 +817,7 @@ ul {
 .topic-options input[type='checkbox'] {
 }
 
-/* .modal-form-spec {
-  color: #2196f3;
-  text-decoration: underline;
-  padding-left: 2px;
-} */
+
 
 /* имя */
 .form-label {
@@ -858,6 +849,17 @@ ul {
   padding-left: 42px;
   outline: transparent;
 }
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid #2196F3;
+border-radius: 4px;
+}
+/* .form-input:invalid {
+outline-color: red;
+}
+.form-input:valid{
+outline-color: #2196F3;
+} */
 .modal-icon {
   position: absolute;
   top: 50%;
@@ -872,11 +874,13 @@ ul {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-}
+} 
 .regist-form {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 423px;
+height: 24px;
 }
 
 .visuaaly-hidden {
@@ -897,12 +901,13 @@ ul {
   background-repeat: no-repeat;
   margin-right: 8px;
 }
-.form-modal-checkbox-uncheck {
+ .form-modal-checkbox-uncheck {
   opacity: 1;
+  color: #000;
 }
 .form-modal-checkbox-check {
   opacity: 0;
-}
+} 
 .form-agreement-text {
   font-size: 14px;
   line-height: 1.7;
@@ -915,13 +920,15 @@ ul {
   text-decoration: underline;
   text-underline-position: under;
 }
-
+.modal-form-spec {
+  opacity: 1;
+}
 /* кнопка форма */
 
 .modal-form-btn {
   display: inline-flex;
   align-items: center;
-  margin: 0;
+ 
 }
 
 .button-form {
@@ -932,6 +939,7 @@ ul {
   display: block;
   margin-right: auto;
   margin-right: auto;
+  /* margin-bottom: 50px; */
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
