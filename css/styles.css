@@ -822,11 +822,50 @@ ul {
 .topic-options input[type='checkbox'] {
 }
 
-.modal-form-spec {
+/* .modal-form-spec {
   color: #2196f3;
   text-decoration: underline;
   padding-left: 2px;
+} */
+
+/* имя */
+.form-label {
+  display: block;
+  position: relative;
+  margin-bottom: 4px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 0.85;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
+.form-label-name {
+  display: block;
+  position: relative;
+  margin-bottom: 4px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 0.85;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form-input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 10px;
+  padding-left: 42px;
+  outline: transparent;
+}
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  fill: #212121;
+  transform: translateY(-50%);
+}
+
 /* галочка четбокс */
 .modal-checkbox {
   display: flex;
@@ -835,9 +874,50 @@ ul {
   margin-bottom: 30px;
 }
 .regist-form {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.visuaaly-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.form-checkbox-icon {
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+.form-modal-checkbox-uncheck {
+  opacity: 1;
+}
+.form-modal-checkbox-check {
+  opacity: 0;
+}
+.form-agreement-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  user-select: none;
+  color: #757575;
+}
+.form-agreement-link {
+  color: #2196f3;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 /* кнопка форма */
+
 .modal-form-btn {
   display: inline-flex;
   align-items: center;
@@ -865,12 +945,12 @@ ul {
   color: #ffffff;
   background: #2196f3;
   border-style: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-form:hover,
 .button-form:focus {
   background-color: #188ce8;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 /* футер подписаться эмейл кнопка */
