@@ -807,8 +807,8 @@ ul {
 .modal-form:hover,
 .modal-form:focus {
   background: #ffffff;
-  border: 1px solid #2196F3;
-border-radius: 4px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 .modal-form label {
   margin-bottom: 5px;
@@ -819,8 +819,7 @@ border-radius: 4px;
   margin: 0;
   padding: 6px 10px;
 }
-.topic-options input[type="checkbox"] {
-  
+.topic-options input[type='checkbox'] {
 }
 
 .modal-form-spec {
@@ -828,6 +827,52 @@ border-radius: 4px;
   text-decoration: underline;
   padding-left: 2px;
 }
+/* галочка четбокс */
+.modal-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.regist-form {
+  
+}
+/* кнопка форма */
+.modal-form-btn {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.button-form {
+  width: 200px;
+  height: 50px;
+
+  top: 713px;
+  display: block;
+  margin-right: auto;
+  margin-right: auto;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 52px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #ffffff;
+  background: #2196f3;
+  border-style: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-form:hover,
+.button-form:focus {
+  background-color: #188ce8;
+}
+
 /* футер подписаться эмейл кнопка */
 .subscription-icon {
   fill: #fff;
