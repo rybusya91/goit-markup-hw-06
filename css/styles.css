@@ -842,32 +842,37 @@ ul {
 }
 .form-input {
   width: 100%;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   background-color: #ffffff;
   border-radius: 4px;
+  margin-bottom: 10px;
   padding: 10px;
   padding-left: 42px;
+  padding-right: 42px;
   outline: transparent;
+  transition: border-color var(--accent-color);
 }
-.form-input:hover,
+
 .form-input:focus {
-  border: 1px solid #2196F3;
+  border: 1px solid var(--accent-color);
 border-radius: 4px;
 }
-/* .form-input:invalid {
-outline-color: red;
-}
-.form-input:valid{
-outline-color: #2196F3;
-} */
+
 .modal-icon {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 15px;
   fill: #212121;
   transform: translateY(-50%);
 }
-
+/* коментарий */
+.register-form {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
 /* галочка четбокс */
 .modal-checkbox {
   display: flex;
@@ -875,7 +880,7 @@ outline-color: #2196F3;
   justify-content: center;
   margin-bottom: 30px;
 } 
-.regist-form {
+.reg-form {
   display: flex;
   align-items: center;
   justify-content: center;
