@@ -736,7 +736,7 @@ ul {
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   left: 50%;
   top: 50%;
 
@@ -811,7 +811,7 @@ ul {
 .modal-form input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin: 0;
+  margin-bottom: 20px;
   padding: 6px 10px;
 }
 .topic-options input[type='checkbox'] {
@@ -832,13 +832,18 @@ ul {
 }
 .form-label-name {
   display: block;
-  position: relative;
+  /* 
+  
+  
+  color: #757575; */
   margin-bottom: 4px;
+  position: relative;
   text-align: left;
   font-size: 12px;
   line-height: 0.85;
   letter-spacing: 0.01em;
-  color: #757575;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .form-input {
   width: 100%;
@@ -861,9 +866,10 @@ border-radius: 4px;
 
 .modal-icon {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 15px;
   fill: #212121;
+  
   transform: translateY(-50%);
 }
 /* коментарий */
