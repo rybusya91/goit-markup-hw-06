@@ -736,7 +736,7 @@ ul {
 .modal {
   position: absolute;
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   left: 50%;
   top: 50%;
 
@@ -770,7 +770,7 @@ ul {
 /* форма в модальном окне */
 .form {
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   left: 535px;
   top: 222px;
   padding: 40px;
@@ -804,7 +804,6 @@ ul {
   margin-bottom: 20px;
 }
 
-
 .modal-form label {
   margin-bottom: 5px;
 }
@@ -814,10 +813,6 @@ ul {
   margin-bottom: 20px;
   padding: 6px 10px;
 }
-.topic-options input[type='checkbox'] {
-}
-
-
 
 /* имя */
 .form-label {
@@ -832,10 +827,7 @@ ul {
 }
 .form-label-name {
   display: block;
-  /* 
-  
-  
-  color: #757575; */
+
   margin-bottom: 4px;
   position: relative;
   text-align: left;
@@ -861,7 +853,7 @@ ul {
 
 .form-input:focus {
   border: 1px solid var(--accent-color);
-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .modal-icon {
@@ -869,29 +861,37 @@ border-radius: 4px;
   top: 50%;
   left: 15px;
   fill: #212121;
-  
+
   transform: translateY(-50%);
 }
+
 /* коментарий */
 .register-form {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
+  border-radius: 4px;
 }
 /* галочка четбокс */
+.register-checkbox:checked + .form-checkbox-icon > .form-modal-checkbox-check {
+  opacity: 1;
+}
+.form-modal-checkbox-check {
+  opacity: 0;
+}
 .modal-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-} 
+}
 .reg-form {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 423px;
-height: 24px;
+  height: 24px;
 }
 
 .visuaaly-hidden {
@@ -907,18 +907,20 @@ height: 24px;
   margin: -1px;
 }
 .form-checkbox-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
   width: 18px;
   height: 18px;
   background-repeat: no-repeat;
   margin-right: 8px;
+  transform: translateY(-50%);
 }
- .form-modal-checkbox-uncheck {
+.form-modal-checkbox-uncheck {
   opacity: 1;
   color: #000;
 }
-.form-modal-checkbox-check {
-  opacity: 0;
-} 
 .form-agreement-text {
   font-size: 14px;
   line-height: 1.7;
@@ -939,7 +941,6 @@ height: 24px;
 .modal-form-btn {
   display: inline-flex;
   align-items: center;
- 
 }
 
 .button-form {
@@ -972,60 +973,100 @@ height: 24px;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-/* футер подписаться эмейл кнопка */
-.subscription-icon {
-  fill: #fff;
-  width: 24px;
-  right: 24px;
-  margin-left: 12px;
+/* футер подписаться эмейл кнопка  */
+.footer-js-speaker-form {
+  display: flex;
+  width: 570px;
+  gap: 12px;
+  text-align: center;
 }
-.subscription-button {
+.footer-user-email {
+  display: flex;
+  width: 100%;
+}
+.footer-ption-title {
+  font-family: 'Roboto';
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  /* width: 448px;
+  height: 23px;
+  left: 576px;
+  top: 262px; */
+
+  letter-spacing: 0.03em;
+
+  width: 207px;
+  height: 16px;
+  left: 815px;
+  top: 2748px;
+
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.footer-subscription-button {
   color: #fff;
   display: flex;
-
+  justify-content: center;
   -webkit-box-align: center;
   width: 200px;
   height: 50px;
   left: 1185px;
   top: 2784px;
+  padding-right: 10px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: #2196f3;
+  border-color: var(--accent-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscription-footer {
-  box-sizing: border-box;
+.footer-subscription-button-size {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  width: 110px;
+  height: 30px;
+  left: 1213px;
+  top: 2794px;
+  letter-spacing: 0.06em;
   display: flex;
-  width: 358px;
-  height: 50px;
-  left: 815px;
-  top: 2784px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 12px;
+  margin-right: 10px;
 }
+.footer-subscription-icon {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+.subscription-footer {
+  margin-left: 95px;
+}
+
 .subscription-footer input::placeholder {
   font-size: 16px;
   line-height: 20px;
   color: #757575;
 }
 .foot-form-mail {
+  flex-grow: 1;
+  padding: 16px;
+
+  height: 50px;
+
+  background-color: transparent;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.js-speaker-form {
-  text-align: center;
-}
-.modal-icon {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  fill: #212121;
-  transform: translateY(-50%);
-}
+
