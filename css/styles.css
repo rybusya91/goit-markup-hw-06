@@ -764,8 +764,8 @@ ul {
   transition: fill var(--animation);
 }
 .modal-close-icon {
-  min-width: 18px;
-  height: 18px;
+  min-width: 11px;
+  height: 11px;
 }
 /* форма в модальном окне */
 .form {
@@ -804,9 +804,6 @@ ul {
   margin-bottom: 20px;
 }
 
-.modal-form label {
-  margin-bottom: 5px;
-}
 .modal-form input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -818,7 +815,7 @@ ul {
 .form-label {
   display: block;
   position: relative;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   text-align: left;
   font-size: 12px;
   line-height: 0.85;
@@ -843,7 +840,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   background-color: #ffffff;
   border-radius: 4px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   padding: 10px;
   padding-left: 42px;
   padding-right: 42px;
@@ -860,7 +857,10 @@ ul {
 .form-input:focus + .modal-icon {
   fill: var(--accent-color);
 }
-
+.modal-close-icon:hover
+.modal-close-icon:focus {
+background-color: var(--accent-color);
+}
 .modal-icon {
   position: absolute;
   top: 50%;
@@ -879,6 +879,7 @@ ul {
   padding-left: 16px;
   padding-right: 16px;
   transition: border-color var(--accent-color);
+  resize: none;
 }
 
 .register-form:focus {
@@ -919,15 +920,10 @@ ul {
   margin: -1px;
 }
 .form-checkbox-icon {
-  position: absolute;
-  top: 50%;
-  left: 0;
-
   width: 18px;
   height: 18px;
   background-repeat: no-repeat;
   margin-right: 8px;
-  transform: translateY(-50%);
 }
 .form-modal-checkbox-uncheck {
   opacity: 1;
@@ -941,7 +937,7 @@ ul {
   color: #757575;
 }
 .form-agreement-link {
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -956,15 +952,10 @@ ul {
 }
 
 .button-form {
-  width: 200px;
-  height: 50px;
-left: 700px;
-  top: 713px;
+  left: 700px;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 52px;
@@ -975,7 +966,7 @@ left: 700px;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: #ffffff;
-  background: #2196f3;
+  background: var(--accent-color);
   border-style: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1081,4 +1072,3 @@ left: 700px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-
