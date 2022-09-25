@@ -806,6 +806,7 @@ ul {
 .modal-form {
   display: flex;
   flex-direction: column;
+  margin-top: 35px;
   margin-bottom: 20px;
 }
 
@@ -835,8 +836,17 @@ ul {
   font-size: 12px;
   line-height: 0.85;
   letter-spacing: 0.01em;
+  color: var(--secondary-color);
   top: 50%;
   transform: translateY(-50%);
+}
+
+.modal-icon {
+  position: absolute;
+  top: 60%;
+  left: 15px;
+  fill: #212121;
+  transform: translateY(-60%);
 }
 .form-input {
   width: 100%;
@@ -844,7 +854,6 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   background-color: #ffffff;
   border-radius: 4px;
-
   padding: 10px;
   padding-left: 42px;
   padding-right: 42px;
@@ -862,14 +871,7 @@ ul {
   fill: var(--accent-color);
 }
 
-.modal-icon {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  fill: #212121;
 
-  transform: translateY(-50%);
-}
 
 /* коментарий */
 .register-form {
@@ -1028,7 +1030,7 @@ ul {
   fill: #fff;
   width: 24px;
   height: 24px;
-  margin-right: 12px;
+  margin-left: 12px;
 }
 .subscription-footer {
   margin-left: 95px;
