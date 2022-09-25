@@ -761,7 +761,7 @@ ul {
   background-color: var(--text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: fill var(--animation);
+  transition: fill 250ms var(--animation);
 }
 /* закрывающая иконка */
 .modal-close-icon {
@@ -857,7 +857,7 @@ ul {
   padding-left: 42px;
   padding-right: 42px;
   outline: transparent;
-  transition: border-color var(--accent-color);
+  transition: border-color 250ms var(--accent-color);
 }
 
 .form-input:focus {
