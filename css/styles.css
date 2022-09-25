@@ -854,6 +854,11 @@ ul {
 .form-input:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+.form-input:focus + .modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-icon {
@@ -871,6 +876,13 @@ ul {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: border-color var(--accent-color);
+}
+
+.register-form:focus {
+  border-color: 1px solid var(--accent-color);
 }
 /* галочка четбокс */
 .register-checkbox:checked + .form-checkbox-icon > .form-modal-checkbox-check {
