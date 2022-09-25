@@ -813,7 +813,6 @@ ul {
 .modal-form input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  /* margin-bottom: 20px; */
   padding: 6px 10px;
 }
 
@@ -826,7 +825,7 @@ ul {
   font-size: 12px;
   line-height: 0.85;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 .form-label-name {
   display: block;
