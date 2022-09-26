@@ -821,11 +821,7 @@ ul {
   display: block;
   position: relative;
   margin-bottom: 10px;
-  text-align: left;
-  font-size: 12px;
-  line-height: 0.85;
-  letter-spacing: 0.01em;
-  color: var(--secondary-color);
+  
 }
 .form-label-name {
   display: block;
@@ -836,18 +832,16 @@ ul {
   line-height: 0.85;
   letter-spacing: 0.01em;
   color: var(--secondary-color);
-  top: 50%;
-  transform: translateY(-50%);
+ 
 }
 .form-label-text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+  display: block;
+  position: relative;
+  margin-bottom: 4px;
+  text-align: left;
   font-size: 12px;
-  line-height: 14px;
-
+  line-height: 0.85;
   letter-spacing: 0.01em;
-
   color: #757575;
 }
 
@@ -885,12 +879,12 @@ ul {
 .register-form {
   width: 448px;
   height: 120px;
+  font-size: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 16px;
-  padding-right: 16px;
   transition: border-color var(--accent-color);
   resize: none;
+  padding: 12px 16px;
 }
 
 .register-form:focus {
